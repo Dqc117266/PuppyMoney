@@ -1,0 +1,19 @@
+
+?
+java:S1604Š"(Make this anonymous inner class a lambda(·ºÿÃ
+J
+java:S1874Ÿ"3Remove this use of "FILL_PARENT"; it is deprecated.(ñÎ’
+e
+java:S3252m"OUse static access with "android.view.ViewGroup$LayoutParams" for "FILL_PARENT".(Ì¬Ìã
+>
+java:S1604y"(Make this anonymous inner class a lambda(·ºÿÃ
+f
+java:S3252Ÿ"OUse static access with "android.view.ViewGroup$LayoutParams" for "FILL_PARENT".(ñÎ’
+f
+java:S3252Ÿ"OUse static access with "android.view.ViewGroup$LayoutParams" for "FILL_PARENT".(ñÎ’
+J
+java:S1874Ÿ"3Remove this use of "FILL_PARENT"; it is deprecated.(ñÎ’
+I
+java:S1874m"3Remove this use of "FILL_PARENT"; it is deprecated.(Ì¬Ìã
+f
+java:S3252m"PUse static access with "android.view.ViewGroup$LayoutParams" for "WRAP_CONTENT".(Ì¬Ìã

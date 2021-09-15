@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wish_photo_album_years_tv_size">28sp</dimen>
+    <dimen name="wish_photo_album_month_tv_size">18sp</dimen>
+    <dimen name="success_diary_count_tv_size">32sp</dimen>
+
+    <dimen name="wish_text_size">16sp</dimen>
+    <dimen name="wish_went_text_size">20sp</dimen>
+    
+    <dimen name="wish_success_diary_child_title_size">20sp</dimen>
+
+    <dimen name="wish_success_diary_item_margin_top_size">24dp</dimen>
+    <dimen name="wish_success_diary_margin_top_size">16dp</dimen>
+
+</resources>

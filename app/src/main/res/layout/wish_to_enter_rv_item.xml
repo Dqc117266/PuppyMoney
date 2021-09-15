@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.dqc.puppymoney.ui.view.CustomFontEditText
+        android:id="@+id/wish_to_enter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:textSize="16sp"
+        android:theme="@style/WishToEnterEditText"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:textSize="16sp"
+        android:layout_gravity="right"
+        android:id="@+id/wish_to_enter_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/12"/>
+
+</LinearLayout>

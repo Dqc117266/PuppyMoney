@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PomodoroView">
+        <attr name="minute" format="integer"/>
+    </declare-styleable>
+
+    <style name="VerifiedDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <declare-styleable name="WaveView">
+        <!-- 波浪颜色 -->
+        <attr name="color" format="color" />
+        <attr name="startColor" format="color"/>
+        <attr name="endColor" format="color"/>
+        <!-- 填充模式 -->
+        <attr name="fill_mode">
+            <!-- 填充顶部，使顶部是直线，底部是波浪线 -->
+            <enum name="top" value="1" />
+            <!-- 填充底部，使底部是直线，顶部是波浪线 -->
+            <enum name="bottom" value="2" />
+        </attr>
+        <!-- 波浪变化速率，<0 向右的小伙，>0 向左的效果-->
+        <attr name="speed" format="integer" />
+        <!-- 水波浪初始状态相位角  -->
+        <attr name="phi" format="integer" />
+        <!-- 水波浪角频率，默认值 1，显示一个三角函数周期  -->
+        <attr name="omega" format="float"/>
+    </declare-styleable>
+
+</resources>

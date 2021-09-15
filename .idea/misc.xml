@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/fg_wish_list_rv_wish_item.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/fg_wish_photo_album_item.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/fragment_success_diary.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/pom_normal_item_layout.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/pom_work_item_layout.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/verified_dialog_normal_layout.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/wish_photo_page_item.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/wish_photo_select_list_item.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/wish_to_choose_item.xml" value="0.18848684210526315" />
+        <entry key="..\:/Andorid/PuppyMoney/PuppyMoney/app/src/main/res/layout/wish_to_enter_rv_item.xml" value="0.18848684210526315" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

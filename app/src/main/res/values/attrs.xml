@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="round_image_view">
+        <attr name="image_width" format="dimension"/>
+        <attr name="fillet_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="walk_around_image">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="max_limit_rv">
+        <attr name="maxWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="success_diary_progress">
+        <attr name="item_width" format="dimension"/>
+        <attr name="item_height" format="dimension"/>
+        <attr name="item_space" format="dimension"/>
+        <attr name="item_count" format="integer"/>
+        <attr name="completed_color" format="color"/>
+        <attr name="uncompleted_color" format="color"/>
+    </declare-styleable>
+
+</resources>

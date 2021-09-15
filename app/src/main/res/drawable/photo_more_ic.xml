@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="12.298dp"
+    android:height="22.838dp"
+    android:viewportWidth="12.298"
+    android:viewportHeight="22.838">
+  <path
+      android:pathData="M12.3,11.419a0.867,0.867 0,0 1,-0.264 0.615l-10.541,10.541a0.87,0.87 0,1 1,-1.23 -1.23l9.926,-9.926 -9.926,-9.926a0.87,0.87 0,1 1,1.23 -1.23L12.034,10.8A0.867,0.867 0,0 1,12.3 11.419Z"
+      android:fillColor="@color/wish_time_year_text_color"/>
+</vector>

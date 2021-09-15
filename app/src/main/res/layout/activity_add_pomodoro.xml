@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddPomodoroActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/add_pomodoro_close_page"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_page_ic"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"/>
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:id="@+id/add_pomodoro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_pomodoro_close_page"
+            android:textSize="20sp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/success_diary_pomodoro_title_color"
+            android:text="番茄钟"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/delete_tips_white_ic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/success_diary_pomodoro_title_color"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/add_pomodoro_title"
+            android:layout_marginTop="16dp"
+            android:background="@color/success_diary_pomodoro_line_color"/>
+    </RelativeLayout>
+
+    <com.dqc.puppymoney.ui.view.CustomFontEditText
+        android:id="@+id/pom_title"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:maxLength="32"
+        android:hint="标题"
+        android:textColorHint="#c9c9c9"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:theme="@style/WishToEnterEditText"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/child_title_pom_count"
+        android:layout_below="@+id/pom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/success_diary_pomodoro_title_color"
+        android:text="番茄钟个数"
+        android:textSize="20sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"/>
+
+    <com.dqc.puppymoney.ui.view.PomodoroSelectorCountView
+        android:id="@+id/pom_count_bar"
+        android:layout_below="@id/child_title_pom_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/pom_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="×1"
+        android:layout_alignBottom="@+id/pom_count_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/success_diary_pomodoro_title_color"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/child_title_pom_dartion"
+        android:layout_below="@+id/pom_count_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/success_diary_pomodoro_title_color"
+        android:text="番茄钟时长"
+        android:textSize="20sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"/>
+
+    <com.dqc.puppymoney.ui.view.PomSelectDurationBar
+        android:id="@+id/pom_dartion_bar"
+        android:layout_below="@+id/child_title_pom_dartion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/pom_dartion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="25分钟"
+        android:layout_alignBottom="@+id/pom_dartion_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/success_diary_pomodoro_title_color"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/child_title_pom_rest_dartion"
+        android:layout_below="@+id/pom_dartion_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/success_diary_pomodoro_title_color"
+        android:text="休息时长"
+        android:textSize="20sp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"/>
+
+    <com.dqc.puppymoney.ui.view.PomSelectDurationBar
+        android:id="@+id/pom_rest_dartion_bar"
+        android:layout_below="@id/child_title_pom_rest_dartion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/pom_rest_dartion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="5分钟"
+        android:layout_alignBottom="@+id/pom_rest_dartion_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/success_diary_pomodoro_title_color"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/pom_start_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_below="@+id/pom_rest_dartion_bar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/pom_create_start_shape"
+        android:text="开始"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wish_text_size"/>
+
+
+</RelativeLayout>

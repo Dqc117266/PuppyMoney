@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/fg_wish_list_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/wish_time_year_text_color"
+        android:clipToPadding="false"
+        android:clipChildren="false"/>
+
+    <View
+        android:id="@+id/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/fg_wish_list_text_tv"
+        android:layout_alignBottom="@+id/fg_wish_list_text_tv"
+        android:background="@drawable/fg_wish_list_bg_shape"/>
+
+    <ImageView
+        android:id="@+id/move_tip_iv"
+        android:layout_width="15.172dp"
+        android:layout_height="13.532dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="64dp"
+        android:src="@drawable/move_tip_ic"
+        android:visibility="gone"/>
+
+</RelativeLayout>

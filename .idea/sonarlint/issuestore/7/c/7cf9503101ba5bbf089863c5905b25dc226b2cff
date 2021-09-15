@@ -1,0 +1,38 @@
+
+vkotlin:S100G"SRename function "earth_tilt" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(ÉËáøÿÿÿÿ8±Å‡Üœ/
+rkotlin:S100e"TRename function "result_rise" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(îè²8±Å‡Üœ/
+tkotlin:S117|"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÍÕ‘˜8±Å‡Üœ/
+tkotlin:S117B"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(½Çßàıÿÿÿÿ8±Å‡Üœ/
+tkotlin:S117G"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÉËáøÿÿÿÿ8±Å‡Üœ/
+okotlin:S117`"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¨³ —8±Å‡Üœ/
+tkotlin:S1173"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(”ñ„àûÿÿÿÿ8±Å‡Üœ/
+tkotlin:S117Q"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÙÈÅÀÿÿÿÿÿ8±Å‡Üœ/
+okotlin:S117e"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(îè²8±Å‡Üœ/
+nkotlin:S1178"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¨àËI8±Å‡Üœ/
+okotlin:S117`"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¨³ —8±Å‡Üœ/
+okotlin:S117="QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(á‡²·8±Å‡Üœ/
+tkotlin:S117z"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(§äÇéøÿÿÿÿ8±Å‡Üœ/
+kkotlin:S1192œ"KDefine a constant instead of duplicating this literal "yyyy-MM-dd" 3 times.(€æÖ²8±Å‡Üœ/
+~kotlin:S100B"[Rename function "ecliptic_longitude" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(½Çßàıÿÿÿÿ8±Å‡Üœ/
+nkotlin:S100["PRename function "UT_rise" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(¡¤Ş›8±Å‡Üœ/
+okotlin:S117L"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(æ¥²ï8±Å‡Üœ/
+tkotlin:S100L"VRename function "sun_deviation" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(æ¥²ï8±Å‡Üœ/
+tkotlin:S117f"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ì“ˆ©8±Å‡Üœ/
+vkotlin:S100z"SRename function "result_set" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(§äÇéøÿÿÿÿ8±Å‡Üœ/
+Kkotlin:S1125"'Remove the unnecessary Boolean literal.(¥úİşÿÿÿÿ8±Å‡Üœ/
+ukotlin:S1003"RRename function "t_century" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(”ñ„àûÿÿÿÿ8±Å‡Üœ/
+mkotlin:S100`"ORename function "UT_set" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(¨³ —8±Å‡Üœ/
+tkotlin:S117Q"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÙÈÅÀÿÿÿÿÿ8±Å‡Üœ/
+tkotlin:S117B"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(½Çßàıÿÿÿÿ8±Å‡Üœ/
+tkotlin:S117{"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ì“ˆ©8±Å‡Üœ/
+tkotlin:S117g"VRename this local variable to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÍÕ‘˜8±Å‡Üœ/
+okotlin:S117["QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¡¤Ş›8±Å‡Üœ/
+tkotlin:S117Q"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(ÙÈÅÀÿÿÿÿÿ8±Å‡Üœ/
+okotlin:S117["QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(¡¤Ş›8±Å‡Üœ/
+tkotlin:S117z"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(§äÇéøÿÿÿÿ8±Å‡Üœ/
+okotlin:S117L"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(æ¥²ï8±Å‡Üœ/
+tkotlin:S117V"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(©ãËüşÿÿÿÿ8±Å‡Üœ/
+pkotlin:S100"RRename function "leap_year" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(´õ’³8±Å‡Üœ/
+kkotlin:S1008"NRename function "L_sun" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(¨àËI8±Å‡Üœ/
+lkotlin:S100="NRename function "G_sun" to match the regular expression ^[a-zA-Z][a-zA-Z0-9]*$(á‡²·8±Å‡Üœ/
+okotlin:S117e"QRename this parameter to match the regular expression "^`?[_a-z][a-zA-Z0-9]*`?$".(îè²8±Å‡Üœ/

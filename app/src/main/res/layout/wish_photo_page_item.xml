@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_photo_show_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wish_photo_album_years_tv_size"
+        android:layout_marginTop="140dp" />
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_photo_show_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wish_photo_album_month_tv_size"
+        android:layout_below="@+id/wish_photo_show_years"
+        android:layout_marginTop="8dp"/>
+
+    <com.dqc.puppymoney.ui.view.WalkAroundImageView
+        android:id="@+id/walk_around_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:radius="16dp"
+        android:transitionName="share"/>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_alignTop="@+id/walk_around_iv"
+        android:layout_alignBottom="@+id/walk_around_iv"
+        android:id="@+id/select_walk_around"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/select_walk_around_shape">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/complete_ic"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

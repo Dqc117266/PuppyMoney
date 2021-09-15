@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/select_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shap_dialog">
+
+        <Button
+            android:id="@+id/select_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wish_page_select_camera_text"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/select_gallery_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wish_page_select_gallery_text"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/picture_cancle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/select_list"
+        android:text="@string/wish_page_select_cancel_text"
+        android:textColor="@color/white"
+        android:background="@drawable/photo_select_shape"
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

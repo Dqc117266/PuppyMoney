@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.WishToEnterActivity"
+    android:orientation="vertical">
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wish_to_enter_title"
+        style="@style/WishToEnterTitle"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/wish_to_enter_attention_ic"
+        android:drawablePadding="8dp"
+        android:text="@string/wish_to_enter_attention"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textSize="15sp"
+        android:textColor="@color/wish_to_enter_attention_color"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wish_to_enter_rv"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="122dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>
+
+    <com.dqc.puppymoney.ui.view.DotViews
+        android:id="@+id/dot_views"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/wish_to_enter_complete_btn"
+        android:layout_marginTop="32dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/complete_btn_selector"
+        android:src="@drawable/complete_ic"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

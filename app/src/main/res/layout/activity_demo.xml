@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity"
+    android:orientation="horizontal"
+    android:id="@+id/line"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.dqc.puppymoney.ui.view.FibonacciView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <Button-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:id="@+id/btn_1"-->
+<!--        android:text="start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <Button-->
+<!--        android:text="pause"-->
+<!--        android:id="@+id/btn_2"-->
+<!--        android:layout_below="@id/btn_1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <Button-->
+<!--        android:text="cancle"-->
+<!--        android:id="@+id/btn_3"-->
+<!--        android:layout_below="@id/btn_2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/add_pomodoro_item"-->
+<!--        android:layout_below="@+id/child_title_pomodoro"-->
+<!--        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="157dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:background="@drawable/wish_photo_album_pomodoro_shape">-->
+
+<!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="100dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:background="@drawable/wave_shape" />&ndash;&gt;-->
+
+<!--        <com.dqc.puppymoney.ui.view.WaveView-->
+<!--            android:id="@+id/wave_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            app:omega="1.2"-->
+<!--            app:phi="1"-->
+<!--            app:speed="-2"-->
+<!--            app:fill_mode="bottom"-->
+<!--            app:startColor="#024FB8"-->
+<!--            app:endColor="@color/transparent"/>-->
+
+<!--        <com.dqc.puppymoney.ui.view.WaveView-->
+<!--            android:id="@+id/wave_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            app:phi="100"-->
+<!--            app:startColor="#024FB8"-->
+<!--            app:endColor="@color/transparent"-->
+<!--            app:speed="-2"-->
+<!--            app:fill_mode="bottom" />-->
+
+<!--        <com.dqc.puppymoney.ui.view.WaveView-->
+<!--            android:id="@+id/wave_3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            app:omega="0.46"-->
+<!--            app:phi="200"-->
+<!--            app:speed="-2"-->
+<!--            app:startColor="#024FB8"-->
+<!--            app:endColor="@color/transparent"-->
+<!--            app:fill_mode="bottom" />-->
+
+
+<!--        <com.dqc.puppymoney.ui.view.CustomFontTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="正在进行-..."-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp"-->
+<!--            android:layout_marginTop="18dp"-->
+<!--            android:layout_marginBottom="18dp"-->
+<!--            android:layout_marginLeft="24dp" />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <com.dqc.puppymoney.ui.view.WaterWaveView-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="@drawable/wave_shape"-->
+<!--        android:layout_marginTop="330dp"/>-->
+
+<!--    <com.dqc.puppymoney.ui.view.WaveView-->
+<!--        android:id="@+id/w1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        app:omega="1.2"-->
+<!--        app:phi="1"-->
+<!--        app:speed="-2"-->
+<!--        app:fill_mode="bottom"-->
+<!--        app:startColor="#024FB8"-->
+<!--        app:endColor="@color/transparent"/>-->
+
+<!--    <com.dqc.puppymoney.ui.view.WaveView-->
+<!--        android:id="@+id/w2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        app:phi="100"-->
+<!--        app:startColor="#024FB8"-->
+<!--        app:endColor="@color/transparent"-->
+<!--        app:speed="-2"-->
+<!--        app:fill_mode="bottom" />-->
+
+<!--    <com.dqc.puppymoney.ui.view.WaveView-->
+<!--        android:id="@+id/w3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        app:omega="0.46"-->
+<!--        app:phi="200"-->
+<!--        app:speed="-2"-->
+<!--        app:startColor="#024FB8"-->
+<!--        app:endColor="@color/transparent"-->
+<!--        app:fill_mode="bottom" />-->
+
+    <!--    <com.dqc.puppymoney.ui.view.PomodoroView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    <com.dqc.puppymoney.ui.view.ClockView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<!--    <com.dqc.puppymoney.ui.view.RoundImageView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:fillet_radius="12dp"-->
+<!--        android:src="@mipmap/night"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@drawable/aaa"-->
+<!--        android:layout_centerInParent="true"/>-->
+
+<!--    <com.dqc.puppymoney.ui.view.AView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+</RelativeLayout>

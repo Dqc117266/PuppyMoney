@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="47dp"
+    android:layout_height="47dp"
+    android:layout_marginLeft="9.5dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.dqc.puppymoney.ui.view.RoundImageView
+        android:id="@+id/select_iv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        app:fillet_radius="6dp"/>
+
+    <ImageView
+        android:id="@+id/select_frame_iv"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@drawable/photo_select_white_cube"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_select_preview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_selection_preview">
+
+        <View
+            android:layout_width="17.5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/complete_ic"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

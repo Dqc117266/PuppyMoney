@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.WishActivity"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/night"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/photo_ablum_black_opacity_bg_color"/>
+
+    <LinearLayout
+        android:id="@+id/wish_date_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="32dp"
+        android:orientation="vertical">
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:id="@+id/wish_year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="42sp"
+            android:textColor="@color/wish_time_year_text_color"/>
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:id="@+id/wish_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wish_time_year_text_color"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:src="@drawable/settings_ic_1" />
+
+    <com.dqc.puppymoney.ui.view.AnnualScheduleView
+        android:id="@+id/wish_annual_schedule"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/wish_date_layout"
+        android:layout_alignBottom="@+id/wish_date_layout"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/wish_time_year_text_color"
+        android:textSize="16sp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_page_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wish_date_layout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:textColor="@color/wish_time_year_text_color"
+        android:text="@string/wish_page_wish_tips_text"
+        android:layout_marginRight="32dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/wish_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wish_date_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:fadingEdge="vertical"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdgeLength="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/wish_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="right">
+        <com.dqc.puppymoney.ui.view.CustomFontRadioButton
+            android:id="@+id/wish_list_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:text="愿望"
+            android:textSize="22sp"
+            android:textColor="@color/wish_radio_btn_unselected_color"
+            android:button="@null"
+            android:background="@android:color/transparent"/>
+        <com.dqc.puppymoney.ui.view.CustomFontRadioButton
+            android:id="@+id/wish_photo_album_rb"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:text="愿望影集"
+            android:textSize="22sp"
+            android:textColor="@color/wish_radio_btn_unselected_color"
+            android:button="@null"
+            android:background="@android:color/transparent"/>
+        <com.dqc.puppymoney.ui.view.CustomFontRadioButton
+            android:id="@+id/wish_success_diary_rb"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:text="成功日记"
+            android:textSize="22sp"
+            android:textColor="@color/wish_radio_btn_unselected_color"
+            android:button="@null"
+            android:background="@android:color/transparent"/>
+    </RadioGroup>
+
+    <View
+        android:id="@+id/particle_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="60dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PuppyMoney</string>
+
+    <string name="wish_to_enter_title">十个想要变富的愿望</string>
+    <string name="wish_to_enter_attention">在明天之前写想十个你想要变得富有的原因。</string>
+    <string name="wish_to_enter_edit_hint">第%1$s个愿望</string>
+    <string name="wish_to_enter_text_count">%1$d/12</string>
+    <string name="wish_to_enter_repeat_tip">第%1$s个愿望已经存在了，请在相应的位置输入其他愿望吧。</string>
+    <string name="wish_to_choose_title">选出三个最想实现的愿望</string>
+    <string name="wish_page_wish_tips_text">你必须每天都要把愿望都看一遍，它会不断提醒你自己想要得到什么。</string>
+    <string name="wish_page_success_diary_text">你最好每天至少写五条做成功的事情！ </string>
+    <string name="wish_page_photo_album">每天看几遍相册想象已经实现愿望了。</string>
+
+    <string name="wish_page_select_camera_text">相机</string>
+    <string name="wish_page_select_gallery_text">相册</string>
+    <string name="wish_page_select_cancel_text">取消</string>
+
+    <string name="wish_list_wented_tips_tv_text">最想实现</string>
+    <string name="wish_photo_album_section_no_permissions">部分权限没有授权</string>
+    <string name="wish_photo_album_permanent_deny_permissions">被永久拒绝授权，请手动授予权限</string>
+    <string name="wish_photo_album_obtain_failure_permissions">获取权限失败</string>
+    <string name="wish_photo_album_img_is_existed">已添加过该图片</string>
+
+    <string name="wish_photo_album_delete_text">删除</string>
+    <string name="wish_photo_album_edit_mode_select_text">选择了%1$d张图片</string>
+    <string name="wish_photo_album_confirm_delete_img_text">确认删除已选择的%1$d张图片</string>
+
+    <string name="wish_photo_album_menu_music">音乐</string>
+    <string name="wish_photo_album_menu_edit">编辑</string>
+
+    <string name="wish_photo_album_empty_text">空空的</string>
+
+    <string name="wish_success_diary_child_title_schedule">今日完成进度</string>
+    <string name="wish_success_diary_child_title_text_record">文图记录</string>
+    <string name="wish_success_diary_child_title_pomodoro_record">番茄钟记录</string>
+
+    <string name="wish_success_diary_pom_mode_work">工作</string>
+    <string name="wish_success_diary_pom_mode_rest">休息</string>
+
+    <string-array name="pom_text">
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+        <item>35分钟</item>
+        <item>40分钟</item>
+    </string-array>
+
+    <string-array name="pom_rest_text">
+        <item>2分钟</item>
+        <item>3分钟</item>
+        <item>4分钟</item>
+        <item>5分钟</item>
+        <item>6分钟</item>
+        <item>7分钟</item>
+        <item>8分钟</item>
+    </string-array>
+
+</resources>

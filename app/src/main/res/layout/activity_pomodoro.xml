@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PomodoroActivity"
+    android:background="@drawable/pom_background_shape">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/add_pomodoro_close_page"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_page_ic"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:layout_marginLeft="21dp"/>
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:id="@+id/add_pomodoro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_pomodoro_close_page"
+            android:textSize="20sp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="番茄钟"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/delete_tips_white_ic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/add_pomodoro_title"
+            android:layout_marginTop="16dp"
+            android:background="@color/success_diary_pomodoro_line_color"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <com.dqc.puppymoney.ui.view.PomodoroView2
+            android:id="@+id/pom_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:id="@+id/pom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true" />
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:layout_below="@+id/pom_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="@string/wish_success_diary_pom_mode_work"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/pom_control_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/pom_btn_bg"
+        android:src="@drawable/pom_pause_ic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"/>
+
+    <ImageButton
+        android:id="@+id/pom_cancel_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/pom_btn_bg"
+        android:src="@drawable/pom_cancle_ic"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"/>
+
+    <com.dqc.puppymoney.ui.view.LongClickCancelBar
+        android:id="@+id/long_click_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="136dp"/>
+
+</RelativeLayout>

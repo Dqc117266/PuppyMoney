@@ -1,0 +1,83 @@
+
+m	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãšÃ8ì§‚Üœ/
+c
+java:S1126)"AReplace this if-then-else statement by a single return statement.(¥Âıªøÿÿÿÿ8ì§‚Üœ/
+n	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÄ¡8ì§‚Üœ/
+^	java:S125è"<This block of commented-out lines of code should be removed.(è–î´ÿÿÿÿÿ8¹Üçë´/
+k
+java:S5361ø"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¦æãÏûÿÿÿÿ8ì§‚Üœ/
+k
+java:S5361¤"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¦æãÏûÿÿÿÿ8ì§‚Üœ/
+m	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ŠÍê8ì§‚Üœ/
+n	java:S117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê³Ó8ì§‚Üœ/
+n	java:S117¾"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê³Ó8ì§‚Üœ/
+e
+java:S2259Ó"BA "NullPointerException" could be thrown; "date" is nullable here.(ş—ø‰şÿÿÿÿ8ì§‚Üœ/
+v	java:S115#"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(àÀ¨Ş8¹Üçë´/
+v	java:S115!"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÖÒğô8ì§‚Üœ/
+j	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãšÃ8ì§‚Üœ/
+o	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ©¡úÿÿÿÿ8ì§‚Üœ/
+o	java:S100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö¿ëıÿÿÿÿ8ì§‚Üœ/
+|
+java:S3008"ZRename this field "days_of_month_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¼ãûÿÿÿÿ8ì§‚Üœ/
+F
+java:S1659š"#Declare "glong" on a separate line.(ß±õÿÿÿÿÿ8ì§‚Üœ/
+j	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ŠÍê8ì§‚Üœ/
+F
+java:S1659›"#Declare "month" on a separate line.(ø¾Òüÿÿÿÿ8ì§‚Üœ/
+o	java:S100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›«âŒşÿÿÿÿ8ì§‚Üœ/
+m	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ŠÍê8ì§‚Üœ/
+j	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØĞø„8ì§‚Üœ/
+r	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¡â†øÿÿÿÿ8ì§‚Üœ/
+i	java:S100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÅI8ì§‚Üœ/
+[	java:S106ñ"9Replace this use of System.out or System.err by a logger.(¾¿¢ãüÿÿÿÿ8¹Üçë´/
+[	java:S106Õ"9Replace this use of System.out or System.err by a logger.(‚Ùşÿÿÿÿ8ì§‚Üœ/
+W
+java:S4973÷"9Use the "equals" method if value comparison was intended.(ÔÚ á8ì§‚Üœ/
+r	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ©¡úÿÿÿÿ8ì§‚Üœ/
+k	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÄ¡8ì§‚Üœ/
+b
+java:S1124#"EReorder the modifiers to comply with the Java Language Specification.(àÀ¨Ş8¹Üçë´/
+h
+java:S1192ğ"KDefine a constant instead of duplicating this literal "yyyy-MM-dd" 3 times.(¬ü¯-8ì§‚Üœ/
+l	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÅI8ì§‚Üœ/
+r	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›«âŒşÿÿÿÿ8ì§‚Üœ/
+w
+java:S3008"ZRename this field "days_of_month_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊñØÜ8ì§‚Üœ/
+r	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö¿ëıÿÿÿÿ8ì§‚Üœ/
+k	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ºå½8ì§‚Üœ/
+@
+java:S1659î""Declare "glat" on a separate line.(ó€¿¶8ì§‚Üœ/
+W
+java:S4973£"9Use the "equals" method if value comparison was intended.(ÔÚ á8ì§‚Üœ/
+r	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ©¡úÿÿÿÿ8ì§‚Üœ/
+D
+java:S1905å"&Remove this unnecessary cast to "int".(–Ìæ‘8ì§‚Üœ/
+r	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¡â†øÿÿÿÿ8ì§‚Üœ/
+n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ºå½8ì§‚Üœ/
+s	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßîàœùÿÿÿÿ8ì§‚Üœ/
+s	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßîàœùÿÿÿÿ8ì§‚Üœ/
+b
+java:S1124!"EReorder the modifiers to comply with the Java Language Specification.(ÖÒğô8ì§‚Üœ/
+D
+java:S1905ç"&Remove this unnecessary cast to "int".(ï±8¹Üçë´/
+p	java:S100ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢üŸ„ıÿÿÿÿ8ì§‚Üœ/
+A
+java:S1659î"#Declare "glong" on a separate line.(ó€¿¶8ì§‚Üœ/
+r	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãµ©¡úÿÿÿÿ8ì§‚Üœ/
+p	java:S100’"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßîàœùÿÿÿÿ8ì§‚Üœ/
+E
+java:S1659ï""Declare "date" on a separate line.(ø¾Òüÿÿÿÿ8ì§‚Üœ/
+o	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¡â†øÿÿÿÿ8ì§‚Üœ/
+s	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãï­øùÿÿÿÿ8ì§‚Üœ/
+A
+java:S16590"Declare "a" on a separate line.(¿í²Äÿÿÿÿÿ8ì§‚Üœ/
+F
+java:S1659ï"#Declare "month" on a separate line.(ø¾Òüÿÿÿÿ8ì§‚Üœ/
+E
+java:S1659š""Declare "glat" on a separate line.(ß±õÿÿÿÿÿ8ì§‚Üœ/
+n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ºå½8ì§‚Üœ/
+E
+java:S1659›""Declare "date" on a separate line.(ø¾Òüÿÿÿÿ8ì§‚Üœ/
+k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê³Ó8ì§‚Üœ/
+n	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÄ¡8ì§‚Üœ/

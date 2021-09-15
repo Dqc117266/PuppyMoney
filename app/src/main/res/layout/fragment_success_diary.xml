@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.SuccessDiaryFragment">
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/child_title_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wish_success_diary_child_title_schedule"
+        android:textSize="@dimen/wish_success_diary_child_title_size"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/success_diary_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="12/5"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size" />
+
+    <com.dqc.puppymoney.ui.view.SuccessDiaryProgressBar
+        android:id="@+id/child_progress_bar"
+        android:layout_below="@+id/child_title_schedule"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size"
+        app:item_width="60dp"
+        app:item_height="8dp"
+        app:item_count="5"
+        app:item_space="8dp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/child_progress_bar"
+        android:id="@+id/child_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wish_success_diary_child_title_text_record"
+        android:textSize="@dimen/wish_success_diary_child_title_size"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/wish_success_diary_item_margin_top_size"/>
+
+    <RelativeLayout
+        android:id="@+id/add_text_item"
+        android:layout_below="@+id/child_title_text"
+        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/wish_photo_album_item_shape">
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日未填写任何内容"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/success_diary_add_ic"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"/>
+    </RelativeLayout>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/child_title_pomodoro"
+        android:layout_below="@+id/add_text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/wish_success_diary_child_title_pomodoro_record"
+        android:textSize="@dimen/wish_success_diary_child_title_size"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/wish_success_diary_item_margin_top_size"/>
+
+    <RelativeLayout
+        android:id="@+id/add_pomodoro_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/child_title_pomodoro"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/wish_success_diary_margin_top_size"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/wish_photo_album_item_shape"
+        android:orientation="horizontal">
+
+        <com.dqc.puppymoney.ui.view.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="今日未填写任何内容"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/success_diary_add_ic" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>

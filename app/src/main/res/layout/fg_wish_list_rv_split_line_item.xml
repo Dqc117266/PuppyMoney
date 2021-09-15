@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_list_wented_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/wish_list_wented_tips_tv_text"
+        android:textColor="@color/wish_time_year_text_color"
+        android:textSize="9sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wish_time_year_text_color" />
+
+</LinearLayout>
