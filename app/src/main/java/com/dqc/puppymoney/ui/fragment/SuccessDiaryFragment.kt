@@ -259,6 +259,7 @@ class SuccessDiaryFragment : Fragment() {
     }
 
     private fun refershPomMode(pomSendData: PomSendData) {
+        Log.d("DQCDQC"," pomSendData " + pomSendData.mCurMode)
         when (pomSendData.mCurMode) {
             PomSendData.POM_WORK_MODE -> {
                 mIntentActivityCode = INTENT_POM_ACTIVITY_CODE
@@ -310,6 +311,12 @@ class SuccessDiaryFragment : Fragment() {
 
             }
         }
+    }
+
+    private fun addPomNormollView() {
+        mPomItem?.removeAllViews()
+        var view = LayoutInflater.from(context).inflate(R.layout.pom_normal_item_layout, null)
+        mPomItem?.addView(view)
     }
 
     private fun addPomWorkView() {
