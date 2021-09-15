@@ -126,8 +126,10 @@
         android:layout_marginTop="116dp"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/cancel_pom_ic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
 
 </androidx.cardview.widget.CardView>
