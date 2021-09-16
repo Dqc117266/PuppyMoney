@@ -16,6 +16,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.fragment.app.Fragment
 import com.dqc.puppymoney.R
@@ -42,6 +43,7 @@ class SuccessDiaryFragment : Fragment() {
     private var mPomTime: CustomFontTextView? = null
     private var mPomControl: ImageButton? = null
     private var mPomCancel: ImageButton? = null
+    private var mCancelIv: ImageView? = null
 
     private var mWaterWaveView3: WaterWaveView4? = null
     private var mWaveView1: WaveView? =null
@@ -335,6 +337,11 @@ class SuccessDiaryFragment : Fragment() {
 
         mPomControl = mPomItem?.findViewById(R.id.pom_control_btn)
         mPomCancel = mPomItem?.findViewById(R.id.pom_cancel_btn)
+        mCancelIv = mPomItem?.findViewById(R.id.cancel_pom_iv)
+
+        mCancelIv!!.setOnClickListener {
+
+        }
 
         if (mPomodoroService!!.getIsStart()) {
             mWaterWaveView3?.startWaterWaveAnim()

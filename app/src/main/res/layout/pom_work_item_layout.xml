@@ -126,10 +126,12 @@
         android:layout_marginTop="116dp"/>
 
     <ImageView
+        android:id="@+id/cancel_pom_iv"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/cancel_pom_ic"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"/>
 
 </androidx.cardview.widget.CardView>
