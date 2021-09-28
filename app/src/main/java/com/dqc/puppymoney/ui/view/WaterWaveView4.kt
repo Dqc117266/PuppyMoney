@@ -19,7 +19,7 @@ class WaterWaveView4(context: Context?, attrs: AttributeSet?) : View(context, at
     private var mMinute = 25
     private var mCurMills = 5 * 60 * 1000
     private var mRadius = 0f
-    private var mWaterWaveAnimator: ValueAnimator? = null
+    var mWaterWaveAnimator: ValueAnimator? = null
     private var mAnimValue = 0f;
     private var mNeedStopAnimator = false
 
@@ -83,7 +83,9 @@ class WaterWaveView4(context: Context?, attrs: AttributeSet?) : View(context, at
     }
 
     private fun drawWave(canvas: Canvas?) {
-        canvas?.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius + dp2px(2) + (mCenterX - mRadius) * mAnimValue, mWavesPaint)
+        if (mAnimValue > 0.01f) {
+            canvas?.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius + dp2px(2) + (mCenterX - mRadius) * mAnimValue, mWavesPaint)
+        }
     }
 
     private fun drawProgressBar(canvas: Canvas?) {

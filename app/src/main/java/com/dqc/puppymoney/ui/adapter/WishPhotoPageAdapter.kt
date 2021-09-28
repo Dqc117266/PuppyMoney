@@ -74,7 +74,8 @@ class WishPhotoPageAdapter: RecyclerView.Adapter<WishPhotoPageAdapter.PageViewHo
         holder.mWalkAroundIv.setImageBitmap(bitmap)
 
         val currentTime = DisplayUtil.getCurrentTime()
-        var yearText = if (wishPhotoBean.mAddYear.equals(Integer.toString(currentTime.mCurrentYear) + "年")) "今年" else wishPhotoBean.mAddYear
+//        var yearText = if (wishPhotoBean.mAddYear.equals(Integer.toString(currentTime.mCurrentYear) + "年")) "今年" else wishPhotoBean.mAddYear
+        var yearText = wishPhotoBean.mAddYear
         holder.mShowYearsTv.setText(yearText)
         var monthText = "${wishPhotoBean.mAddMonthDay}  ${wishPhotoBean.mAddHourMinute}"
         holder.mShowTimeTv.setText(monthText)

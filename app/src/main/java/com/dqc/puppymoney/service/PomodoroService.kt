@@ -18,9 +18,8 @@ class PomodoroService : Service() {
     private val HANDLER_WHAT = 100
     private val NOTIFICATION_ID = 98
     private var mMediaPlayer: MediaPlayer? = null
-    private var mCurMinute = 0
     private var mRestMinute = 5
-    private var mPomCount = 1
+    private var mPomCount = 4
     private var mCurMode = 0
     private var mCurPomCount = 0
 
@@ -35,6 +34,7 @@ class PomodoroService : Service() {
     private var mIsCancel = true
     private var mKV: MMKV? = null
 
+    var mCurMinute = 0
     var mMinute = 25
     var mPomSenDate: PomSendData? = null
 
@@ -59,7 +59,7 @@ class PomodoroService : Service() {
     }
 
     private fun updateTime() {
-        var allMills = mCurMinute * 60 * 1000
+        var allMills = mCurMinute * 1 * 1000
         var curMills = SystemClock.elapsedRealtime() - mCurrentMills
         mCountDownMills = allMills - curMills
         Log.d("Services", " # m = ${mCountDownMills / 1000 / 60} s = ${mCountDownMills / 1000 % 60}")
@@ -67,7 +67,7 @@ class PomodoroService : Service() {
             sendPomBroadcast()
         } else {
             changePomMode()
-            cancelPomodoro()
+            resetPomodoro()
         }
     }
 
@@ -79,10 +79,12 @@ class PomodoroService : Service() {
     }
 
     fun changePomMode() {
+        Log.d("Services", " changePomMode mCurMode = " + mCurMode)
         if (mCurMode == 0) {
             mCurMode = 1
             mCurMinute = mRestMinute
             mCurPomCount ++
+            Log.d("Services", " changePomMode mCurMinute = " + mCurMode)
         } else {
             if (mCurPomCount == mPomCount) {
                 mCurMode = 2
@@ -119,11 +121,12 @@ class PomodoroService : Service() {
         mPomSenDate?.mCurCountDownStatus = cdStatus
 
         mPomSenDate?.mCurMode = mode
-        mPomSenDate?.mMaxMinute = mMinute
+        mPomSenDate?.mMaxMinute = mCurMinute
         mPomSenDate?.mCurMills = mCountDownMills.toInt()
 
         intent.putExtra("pomdata", mPomSenDate)
 
+        Log.d("Services", " mode " + mode + " mCurMode " + mCurMode)
         sendBroadcast(intent)
     }
 
@@ -142,7 +145,7 @@ class PomodoroService : Service() {
             mHandler.sendEmptyMessageDelayed(HANDLER_WHAT, 0)
         }
 
-        mCurMode = 0
+//        mCurMode = 0
     }
 
     fun pausePomodoro() {
@@ -155,6 +158,18 @@ class PomodoroService : Service() {
         }
     }
 
+    fun resetPomodoro() {
+        if (mIsRuning) {
+            mIsCancel = true
+            mIsRuning = false
+            mIsPause = false
+            mIsStart = false
+            mHandler.removeMessages(HANDLER_WHAT)
+            mCountDownMills = mCurMinute * 1000 * 60L
+            sendPomBroadcast()
+        }
+    }
+
     fun cancelPomodoro() {
         if (mIsRuning) {
             mIsCancel = true
@@ -162,7 +177,7 @@ class PomodoroService : Service() {
             mIsPause = false
             mIsStart = false
             mHandler.removeMessages(HANDLER_WHAT)
-            mCountDownMills = mMinute * 1000 * 60L
+            mCountDownMills = mCurMinute * 1000 * 60L
 
             mCurMode = 2
             sendPomBroadcast()
@@ -220,16 +235,25 @@ class PomodoroService : Service() {
             mMediaPlayer?.start()
         }
         Log.d("PomdoroService", " mMediaPlayer.isPlaying " + mMediaPlayer?.isPlaying)
-        try {
-            Thread.sleep(3000)
-        } catch (e: InterruptedException) {
-            e.printStackTrace()
-        }
-        Log.d("PomdoroService", "3000ms sleep after" )
 
-        if (mMediaPlayer != null) {
-            mMediaPlayer?.pause()
-        }
+        mMediaPlayer?.setOnCompletionListener(object : MediaPlayer.OnCompletionListener {
+            override fun onCompletion(mp: MediaPlayer?) {
+//                mMediaPlayer?.prepare()
+                mMediaPlayer?.start()
+                Log.d("PomdoroService", "mMediaPlayer.start" )
+
+            }
+        })
+//        try {
+//            Thread.sleep(3000)
+//        } catch (e: InterruptedException) {
+//            e.printStackTrace()
+//        }
+//        Log.d("PomdoroService", "3000ms sleep after" )
+
+//        if (mMediaPlayer != null) {
+//            mMediaPlayer?.pause()
+//        }
         Log.d("PomdoroService", " pause " )
 
     }

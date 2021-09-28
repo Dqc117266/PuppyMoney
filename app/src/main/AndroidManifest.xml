@@ -26,14 +26,17 @@
         <activity android:name=".ui.activity.PomodoroActivity">
 
         </activity>
-        <activity android:name=".ui.activity.AddPomodoroActivity"></activity>
+        <activity android:name=".ui.activity.AddPomodoroActivity"
+            android:screenOrientation="portrait"></activity>
+
         <activity android:name=".ui.activity.PhotoViewActivity" />
 
         <activity
             android:name=".ui.activity.WishPhotoAlbumActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".ui.activity.SplashActivity">
+        <activity android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,11 +59,13 @@
 
         </activity>
 
-        <activity android:name=".ui.activity.WishToChooseActivity" />
+        <activity android:name=".ui.activity.WishToChooseActivity"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".ui.activity.WishToEnterActivity"
-            android:hardwareAccelerated="true" />
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
 
         <service
             android:name=".service.PomodoroService"

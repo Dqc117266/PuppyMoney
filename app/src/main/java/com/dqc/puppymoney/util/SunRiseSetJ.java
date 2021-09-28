@@ -357,15 +357,14 @@ public class SunRiseSetJ {
     }
 
     public static void main(String[] args) {
-//        System.out.println(SunRiseSetJ.getSunrise(new BigDecimal(118.72),new BigDecimal(32.00500),new Date()));
-//        System.out.println(SunRiseSetJ.getSunset(new BigDecimal(118.72),new BigDecimal(32.00500),new Date()));
-//
-//        System.out.println(SunRiseSetJ.getSunrise(new BigDecimal(116.39),new BigDecimal(39.9),new Date()));
-//        System.out.println(SunRiseSetJ.getSunset(new BigDecimal(116.39),new BigDecimal(39.9),new Date()));
+        System.out.println(SunRiseSetJ.getSunrise(new BigDecimal(118.72),new BigDecimal(32.00500),new Date()));
+        System.out.println(SunRiseSetJ.getSunset(new BigDecimal(118.72),new BigDecimal(32.00500),new Date()));
 
-        Gson gson = new Gson();
-        String str = "{\"iGOPChannel\":\"121212\",\"iGOPChannelType\":\"iGOPChannel\"}";
-        A a = gson.fromJson(str, A.class);
-        System.out.println(" iGOPChannel:" + a.iGOPChannel + " iGOPChannelType:" + a.iGOPChannelType);
+        System.out.println(SunRiseSetJ.getSunrise(new BigDecimal(118.22),new BigDecimal(31.14),new Date()));
+        System.out.println(SunRiseSetJ.getSunset(new BigDecimal(118.22),new BigDecimal(31.14),new Date()));
+
+
+        System.out.println(SunRiseSetJ.getSunrise(new BigDecimal(119.14),new BigDecimal(32.37),new Date()));
+        System.out.println(SunRiseSetJ.getSunset(new BigDecimal(119.14),new BigDecimal(32.37),new Date()));
     }
 }

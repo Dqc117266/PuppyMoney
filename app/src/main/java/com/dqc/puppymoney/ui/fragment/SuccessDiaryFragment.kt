@@ -18,6 +18,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.dqc.puppymoney.R
 import com.dqc.puppymoney.bean.PomSendData
@@ -50,6 +51,7 @@ class SuccessDiaryFragment : Fragment() {
     private var mWaveView2: WaveView? =null
     private var mWaveView3: WaveView? =null
     private var mPomWorkItemLayout: View? = null
+    private var mPomStatusTv: CustomFontTextView? = null
 
 
     companion object {
@@ -223,19 +225,23 @@ class SuccessDiaryFragment : Fragment() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if (intent?.action.equals("com.dqc.puppymoney")) {
                 val data = intent?.getSerializableExtra("pomdata") as PomSendData
+                Log.d("Services", " PomReceiver mode " + data.mCurMode)
                 if (mLastPomSendData == null) {
                     refershPomMode(data)
+                    Log.d("Services", "mLastPomSendData == null PomReceiver mode " + data.mCurMode)
                 }
 
                 if (mLastPomSendData != null && mLastPomSendData?.mCurMode != data.mCurMode) {
                     refershPomMode(data)
                     Log.d("LastpomSendData", "mCurMode ${mLastPomSendData?.mCurMode}")
+                    Log.d("Services", "mLastPomSendData != null && mLastPomSendData?.mCurMode != data.mCurMode PomReceiver mode " + data.mCurMode)
 //                    refreshPomStatus(data)
                 }
 
                 if (mLastPomSendData != null && mLastPomSendData?.mCurCountDownStatus != data.mCurCountDownStatus) {
                     refreshPomStatus(data)
                     Log.d("LastpomSendData", "mCurCountDownStatus ${data.mCurCountDownStatus}")
+                    Log.d("Services", "mLastPomSendData != null && mLastPomSendData?.mCurCountDownStatus != data.mCurCountDownStatus PomReceiver mode " + data.mCurMode)
 
                 }
 
@@ -251,11 +257,12 @@ class SuccessDiaryFragment : Fragment() {
             PomSendData.POM_WORK_MODE -> {
                 var mills = pomSendData.mCurMills
                 mPomTime?.setText("${DisplayUtil.numberAddZero(DisplayUtil.millsToMinute(mills))}:${DisplayUtil.numberAddZero(DisplayUtil.millsToSecond(mills))}")
-                mWaterWaveView3?.setCurMills(mills)
             }
 
             PomSendData.POM_REST_MODE -> {
-
+                var mills = pomSendData.mCurMills
+                mPomTime?.setText("${DisplayUtil.numberAddZero(DisplayUtil.millsToMinute(mills))}:${DisplayUtil.numberAddZero(DisplayUtil.millsToSecond(mills))}")
+                mWaterWaveView3?.setCurMills(mills)
             }
         }
     }
@@ -266,19 +273,31 @@ class SuccessDiaryFragment : Fragment() {
             PomSendData.POM_WORK_MODE -> {
                 mIntentActivityCode = INTENT_POM_ACTIVITY_CODE
                 addPomWorkView()
+//                mPomStatusTv?.setText(R.string.wish_success_diary_pom_mode_work)
             }
 
             PomSendData.POM_REST_MODE -> {
                 mIntentActivityCode = INTENT_POM_ACTIVITY_CODE
 
+                if (mPomWorkItemLayout != null) {
+                    mPomTime?.setText("${mPomodoroService?.mCurMinute!!}:00")
+                    mWaterWaveView3?.setMinute(mPomodoroService?.mCurMinute!!)
+                    mPomStatusTv?.setText(R.string.wish_success_diary_pom_mode_rest)
+
+                    pomStartAnim()
+                    mWaterWaveView3?.pauseWaterWaveAnim()
+                    mWaveView1?.stopWava()
+                    mWaveView2?.stopWava()
+                    mWaveView3?.stopWava()
+                }
             }
 
             PomSendData.POM_OVER_STATUS -> {
                 mIntentActivityCode = INTENT_POM_CREATE_ACTIVITY_CODE
 
                 if (mPomWorkItemLayout != null) {
-                    mPomTime?.setText("${mPomodoroService?.mMinute!!}:00")
-                    mWaterWaveView3?.setMinute(mPomodoroService?.mMinute!!)
+                    mPomTime?.setText("${mPomodoroService?.mCurMinute!!}:00")
+                    mWaterWaveView3?.setMinute(mPomodoroService?.mCurMinute!!)
 
                     pomStartAnim()
                     mWaterWaveView3?.pauseWaterWaveAnim()
@@ -326,6 +345,7 @@ class SuccessDiaryFragment : Fragment() {
         mPomWorkItemLayout = LayoutInflater.from(context).inflate(R.layout.pom_work_item_layout, null)
         mPomItem?.addView(mPomWorkItemLayout)
         mPomTime = mPomItem?.findViewById(R.id.fragment_pom_time)!!
+        mPomStatusTv = mPomItem?.findViewById(R.id.fragment_pom_status_tv)!!
 
         mWaterWaveView3 = mPomItem?.findViewById(R.id.water_wave_view)
         mWaterWaveView3?.setMinute(mPomodoroService?.mMinute!!)
@@ -369,6 +389,14 @@ class SuccessDiaryFragment : Fragment() {
                 mWaveView2?.startWava()
                 mWaveView3?.startWava()
             }
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        if (mWaterWaveView3 != null) {
+            mWaterWaveView3?.mWaterWaveAnimator?.cancel()
+            mWaterWaveView3?.mWaterWaveAnimator = null
         }
     }
 }
