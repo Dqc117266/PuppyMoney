@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="@dimen/wish_photo_album_years_tv_size"
-        android:layout_marginTop="140dp" />
+        android:layout_marginTop="132dp" />
 
     <com.dqc.puppymoney.ui.view.CustomFontTextView
         android:id="@+id/wish_photo_show_month"
