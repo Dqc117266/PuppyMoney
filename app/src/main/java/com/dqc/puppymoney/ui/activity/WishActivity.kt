@@ -31,6 +31,7 @@ import com.dqc.puppymoney.ui.fragment.WishListFragment
 import com.dqc.puppymoney.ui.fragment.WishPhotoAlbumFragment
 import com.dqc.puppymoney.util.DateUpdate
 import com.dqc.puppymoney.util.DisplayUtil
+import com.dqc.puppymoney.util.SunRiseSetJ
 import com.hjq.permissions.OnPermissionCallback
 import com.hjq.permissions.Permission
 import com.hjq.permissions.XXPermissions
@@ -39,6 +40,7 @@ import com.plattysoft.leonids.modifiers.AlphaModifier
 import com.plattysoft.leonids.modifiers.ScaleModifier
 import kotlinx.android.synthetic.main.activity_demo.*
 import kotlinx.android.synthetic.main.activity_wish.*
+import java.math.BigDecimal
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -182,6 +184,7 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
 
             if (wish_time_tv.visibility == View.GONE) {
                 wish_time_tv.visibility = View.VISIBLE
+                wish_sun_status_tv.visibility = View.VISIBLE
                 showTimeAnimator()
                 timedClose()
             } else if (wish_time_tv.visibility == View.VISIBLE) {
@@ -250,6 +253,19 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
         ObjectAnimator.ofFloat(wish_time_tv, "alpha", 0f, 1f)
                 .setDuration(200)
                 .start()
+
+        ObjectAnimator.ofFloat(wish_sun_status_tv, "translationY", -DisplayUtil.dip2px(this, 12), 0f)
+            .setDuration(200)
+            .start()
+        ObjectAnimator.ofFloat(wish_sun_status_tv, "alpha", 0f, 1f)
+            .setDuration(200)
+            .start()
+
+        var rise = "日出${SunRiseSetJ.getSunrise(BigDecimal(118.72),BigDecimal(32.00500), Date())}"
+        var set = "日落${SunRiseSetJ.getSunset(BigDecimal(118.72),BigDecimal(32.00500), Date())}"
+
+        wish_sun_status_tv.setText(rise + "\t\t" +set)
+
     }
 
     fun hideTimeAnimator() {
@@ -265,6 +281,19 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
             }
         })
         alpha.start()
+
+        ObjectAnimator.ofFloat(wish_sun_status_tv, "translationY", 0f, -DisplayUtil.dip2px(this, 12))
+            .setDuration(200)
+            .start()
+        var alphaSun = ObjectAnimator.ofFloat(wish_sun_status_tv, "alpha", 1f, 0f)
+        alphaSun.duration = 200
+        alphaSun.addListener(object : AnimatorListenerAdapter() {
+            override fun onAnimationEnd(animation: Animator?) {
+                super.onAnimationEnd(animation)
+                wish_sun_status_tv.visibility = View.GONE
+            }
+        })
+        alphaSun.start()
     }
 
     fun radioButtonAnimationCompose(previousPosition: Int, position: Int) {

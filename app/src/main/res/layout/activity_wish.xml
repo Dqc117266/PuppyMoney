@@ -74,6 +74,18 @@
         android:textSize="16sp"/>
 
     <com.dqc.puppymoney.ui.view.CustomFontTextView
+        android:id="@+id/wish_sun_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wish_date_layout"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="日出03:26   日落17:23"
+        android:layout_alignLeft="@+id/wish_date_layout"
+        android:textColor="@color/wish_time_year_text_color"
+        android:textSize="12sp"/>
+
+    <com.dqc.puppymoney.ui.view.CustomFontTextView
         android:id="@+id/wish_page_tips_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -108,6 +120,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
         android:gravity="right">
+
         <com.dqc.puppymoney.ui.view.CustomFontRadioButton
             android:id="@+id/wish_list_rb"
             android:layout_width="wrap_content"
@@ -118,6 +131,7 @@
             android:textColor="@color/wish_radio_btn_unselected_color"
             android:button="@null"
             android:background="@android:color/transparent"/>
+
         <com.dqc.puppymoney.ui.view.CustomFontRadioButton
             android:id="@+id/wish_photo_album_rb"
             android:layout_marginTop="8dp"
@@ -129,6 +143,7 @@
             android:textColor="@color/wish_radio_btn_unselected_color"
             android:button="@null"
             android:background="@android:color/transparent"/>
+
         <com.dqc.puppymoney.ui.view.CustomFontRadioButton
             android:id="@+id/wish_success_diary_rb"
             android:layout_marginTop="8dp"
@@ -140,6 +155,7 @@
             android:textColor="@color/wish_radio_btn_unselected_color"
             android:button="@null"
             android:background="@android:color/transparent"/>
+
     </RadioGroup>
 
     <View

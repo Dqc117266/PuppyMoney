@@ -271,9 +271,17 @@ public class SunRiseSetJ {
 
                                     G_sun(t_century(days(year, month, date), UTo)))))), UTo, glong, glat, year, month, date);
 
-            return (int) (sunrise / 15 + 8) + ":" + (int) (60 * (sunrise / 15 + 8 - (int) (sunrise / 15 + 8)));
+            return numberAddZero((int) (sunrise / 15 + 8)) + ":" + numberAddZero((int) (60 * (sunrise / 15 + 8 - (int) (sunrise / 15 + 8))));
         }
         return null;
+    }
+
+    private static String numberAddZero(int num) {
+        if (num < 10) {
+            return "0" + num;
+        }
+
+        return "" + num;
     }
 
     // 日落
@@ -316,7 +324,7 @@ public class SunRiseSetJ {
                                     G_sun(t_century(days(year, month, date), UTo)))))), UTo, glong, glat, year, month, date);
 
 
-            return (int) (sunset / 15 + 8) + ":" + (int) (60 * (sunset / 15 + 8 - (int) (sunset / 15 + 8)));
+            return numberAddZero((int) (sunset / 15 + 8)) + ":" + numberAddZero((int) (60 * (sunset / 15 + 8 - (int) (sunset / 15 + 8))));
         }
         return null;
     }
