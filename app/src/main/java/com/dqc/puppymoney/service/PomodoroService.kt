@@ -55,6 +55,7 @@ class PomodoroService : Service() {
             mCurMinute = mMinute
             mRestMinute = restMinute
             mPomCount = pomCount
+            mCurPomCount = 0
         }
     }
 
@@ -84,7 +85,7 @@ class PomodoroService : Service() {
             mCurMode = 1
             mCurMinute = mRestMinute
             mCurPomCount ++
-            Log.d("Services", " changePomMode mCurMinute = " + mCurMode)
+            Log.d("Services", " changePomMode mCurMinute = " + mCurMode + " curCount " + mCurPomCount + " pomCount " + mPomCount)
         } else {
             if (mCurPomCount == mPomCount) {
                 mCurMode = 2

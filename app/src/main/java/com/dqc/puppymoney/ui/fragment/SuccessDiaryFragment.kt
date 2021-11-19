@@ -295,16 +295,18 @@ class SuccessDiaryFragment : Fragment() {
             PomSendData.POM_OVER_STATUS -> {
                 mIntentActivityCode = INTENT_POM_CREATE_ACTIVITY_CODE
 
-                if (mPomWorkItemLayout != null) {
-                    mPomTime?.setText("${mPomodoroService?.mCurMinute!!}:00")
-                    mWaterWaveView3?.setMinute(mPomodoroService?.mCurMinute!!)
-
-                    pomStartAnim()
-                    mWaterWaveView3?.pauseWaterWaveAnim()
-                    mWaveView1?.stopWava()
-                    mWaveView2?.stopWava()
-                    mWaveView3?.stopWava()
-                }
+//                if (mPomWorkItemLayout != null) {
+//                    mPomTime?.setText("${mPomodoroService?.mCurMinute!!}:00")
+//                    mWaterWaveView3?.setMinute(mPomodoroService?.mCurMinute!!)
+//
+//                    pomStartAnim()
+//                    mWaterWaveView3?.pauseWaterWaveAnim()
+//                    mWaveView1?.stopWava()
+//                    mWaveView2?.stopWava()
+//                    mWaveView3?.stopWava()
+//                }
+                addPomNormollView()
+                mLastPomSendData = null
             }
         }
     }

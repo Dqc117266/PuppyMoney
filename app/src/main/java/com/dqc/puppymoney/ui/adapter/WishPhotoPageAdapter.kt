@@ -28,7 +28,7 @@ class WishPhotoPageAdapter: RecyclerView.Adapter<WishPhotoPageAdapter.PageViewHo
     private var mContext: Context? = null
     private var mIsEditMode: Boolean = false
     private var mSelectedList: BooleanArray? = null
-    public var mCurPostion: Int = 0
+    var mCurPostion: Int = 0
 
     fun setPhotoPageTouchLienter(photoPageTouchLienter: IPhotoPageTouchLienter) {
         mPhotoPageTouchLienter = photoPageTouchLienter
