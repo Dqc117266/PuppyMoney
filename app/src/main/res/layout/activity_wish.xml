@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/night"
+        android:src="@drawable/girl"
         android:scaleType="centerCrop"/>
 
     <View
@@ -48,8 +48,8 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="24dp"
         android:layout_marginTop="70dp"
+        android:layout_marginRight="24dp"
         android:background="@null"
         android:src="@drawable/settings_ic_1" />
 
@@ -105,10 +105,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="94dp"
         android:layout_marginBottom="2dp"
-        android:orientation="vertical"
         android:fadingEdge="vertical"
-        android:requiresFadingEdge="horizontal"
-        android:fadingEdgeLength="50dp"/>
+        android:fadingEdgeLength="50dp"
+        android:orientation="vertical"
+        android:requiresFadingEdge="horizontal" />
 
     <RadioGroup
         android:id="@+id/wish_radio_group"

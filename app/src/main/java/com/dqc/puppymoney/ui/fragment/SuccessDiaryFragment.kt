@@ -80,7 +80,7 @@ class SuccessDiaryFragment : Fragment() {
         var view = inflater.inflate(R.layout.fragment_success_diary, container, false)
         initView(view)
         registerBroadcast()
-        bindService()
+//        bindService()
         return view
     }
 

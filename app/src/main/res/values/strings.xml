@@ -4,7 +4,7 @@
     <string name="wish_to_enter_title">十个想要变富的愿望</string>
     <string name="wish_to_enter_attention">在明天之前写想十个你想要变得富有的原因。</string>
     <string name="wish_to_enter_edit_hint">第%1$s个愿望</string>
-    <string name="wish_to_enter_text_count">%1$d/12</string>
+    <string name="wish_to_enter_text_count">%1$d/20</string>
     <string name="wish_to_enter_repeat_tip">第%1$s个愿望已经存在了，请在相应的位置输入其他愿望吧。</string>
     <string name="wish_to_choose_title">选出三个最想实现的愿望</string>
     <string name="wish_page_wish_tips_text">你必须每天都要把愿望都看一遍，它会不断提醒你自己想要得到什么。</string>

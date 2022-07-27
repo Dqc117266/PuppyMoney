@@ -59,6 +59,7 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
     private var timer: Timer? = null
     private var particleEffectsTimer: Timer? = null
     private var mParticleSystem: ParticleSystem? = null
+    private var mShotIconIdList: IntArray? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -144,8 +145,8 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
                     layoutParams.bottomMargin = Random().nextInt(DisplayUtil.dip2px(this@WishActivity, 240)
                             .toInt())
                     particle_view.layoutParams = layoutParams
-
-                    mParticleSystem = ParticleSystem(this@WishActivity, 2, R.drawable.round_ic, 1000 * 30)
+                    var iconId = getRandomIconId()
+                    mParticleSystem = ParticleSystem(this@WishActivity, 2, iconId, 1000 * 30)
                     mParticleSystem?.setAcceleration(0.000013f, 180)
                     mParticleSystem?.setSpeedByComponentsRange(0.05f, 0.1f, -0.02f, -0.05f)
                     mParticleSystem?.setScaleRange(0.4f, 1f)
@@ -156,6 +157,18 @@ class WishActivity : BaseActivity(), RadioGroup.OnCheckedChangeListener {
             }
 
         }, 100, 1600)
+    }
+
+    private fun getRandomIconId(): Int {
+        mShotIconIdList = intArrayOf(R.drawable.round_ic,
+            R.drawable.round_ic_001,
+            R.drawable.round_ic_002,
+            R.drawable.round_ic_003,
+            R.drawable.round_ic_004,
+            R.drawable.round_ic_005,
+            R.drawable.round_ic_006)
+        val nextInt = Random().nextInt(mShotIconIdList!!.size)
+        return mShotIconIdList!!.get(nextInt)
     }
 
     private fun initDateView() {

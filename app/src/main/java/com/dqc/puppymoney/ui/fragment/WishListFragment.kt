@@ -23,7 +23,7 @@ import com.dqc.puppymoney.util.DisplayUtil
 class WishListFragment : Fragment(), WishPhotoNeedRefrshCallBack {
 
     private lateinit var mWishListAdapter: WishListAdapter
-    private lateinit var mRecyclerView: RecyclerView;
+    private lateinit var mRecyclerView: RecyclerView
     private var mWishList: ArrayList<WishToChooseBean> = ArrayList()
     private var mWishPhotoAlbumFragment: WishPhotoAlbumFragment? = null
     private var mTipLine: LinearLayout? = null
@@ -51,7 +51,7 @@ class WishListFragment : Fragment(), WishPhotoNeedRefrshCallBack {
 //            mWishList.addAll(mostWantedwishList)
             mWishList.addAll(wishList)
             for (i in 0..mWishList.size - 1) {
-                Log.d("WishListFragment ", " wish ${mWishList.get(i).wishText} ${mWishList.get(i).isSelected} ${mWishList.get(i).index}")
+                Log.d("WishListFragment", " wish ${mWishList.get(i).wishText} ${mWishList.get(i).isSelected} ${mWishList.get(i).index}")
             }
             activity!!.runOnUiThread({
                 mWishListAdapter.setWishList(mWishList)
